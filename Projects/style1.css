@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #000000;
+    color: white;
+    /* font-family: oswald; */
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,136 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    /* font-family: 'gilroy'; */
+    /* font-family: 'Dancing Script', cursive; */
+/* font-family: 'Dela Gothic One', sans-serif;
+font-family: 'Fuggles', cursive; */
+/* font-family: 'Lato', sans-serif; */
+font-family: 'Montserrat', sans-serif;
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Readex Pro', sans-serif;
+font-family: 'REM', sans-serif;
+font-family: 'Russo One', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    }
+#background{
+    width: 100%;
+    height: 100%; 
+    /* background-color: black; */
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 10px; */
+    /* border: 1px solid red; */
+}
+.navLeft, .navRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+a{
+    font-weight: 600;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navLeft img{
+    height: 64px;
+}
+#background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay{
+    height: 100%;
+    width: 80%;
+    /* border: 2px solid white; */
+    position: absolute;
+    top:0;
+    left: 10%;
+    pointer-events: none;
+    /* background-color: rgba(240, 255, 255, 0.169); */
+}
+.hero{
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    /* height: 200px; */
+    /* background-color: red; */
+    justify-content: space-between;
+    margin-top: 60px ;
+    /* border: 2px solid red; */
+}
+.leftContent{
+    min-width: 50%;
+    /* background-color: green; */
+    height: 100%;
+}
+.rightContent{
+    width: 20%;
+    /* background-color: yellowgreen; */
+    height: 100%;
+    align-items: flex-start;
+    text-align: right;
+    color: white;
+    font-size: 14px;
+}
+.elem{
+    height: 80px;
+   
+    overflow: hidden;
+    position: relative;
+    
+}
+h1{
+    height: 100%;
+    text-transform: uppercase;
+    font-size: 4vw;
+    color: white;
+    font-family: 'Black Ops One';
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.elem h1:nth-child(1){
+    top: 0;
+}
+button{
+    width: 13vw;
+    height: 8vh;
+    background-color: white;
+    border: none;
+    margin-top: 20px;
+    font-family: 'Black Ops One';
+    font-size: 1.3vw;
+
+}
+.img{
+    width: 100%;
+    height: 150px;
+    /* background-color: red; */
+    background-image: url(https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80);
+    background-position: center;
+    background-size: cover;
+    margin: 15px 0;
+}
+.rightContent p:nth-child(3){
+    margin-bottom: 40px;
+    text-align: right;
+}

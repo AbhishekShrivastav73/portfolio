@@ -1,0 +1,241 @@
+@font-face {
+    font-family: heading;
+    src: url(./NBInternationalProBoo.ttf);
+}
+@font-face {
+    font-family: content;
+    src: url(./Rejouice-Headline.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* ........Hero Containers ..........  */
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative  ;
+}
+#cursor{
+    width: 7vw;
+    height: 7vw;
+    background-color: #FF5F38;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    font-family: heading;
+}
+.backgroundVideo{ 
+    width: 100%;
+    height: 100%;
+}
+.backgroundVideo video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.heroContent{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+
+}
+nav{
+    /* border: 2px solid red; */
+    color: white;
+    font-family: content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.3vw 2.8vw;
+}
+nav h4{
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+.heroContent h1{
+    font-size: 26vw;
+    font-weight: 100;
+    color: white;
+    font-family: content;
+    padding: 0 2.8vw;
+    line-height: 18vw;
+}
+.heroContent h1 span{
+    display: inline-block;
+}
+.page2{
+    width: 100%;
+    height: 100vh;
+    background-color: #FAF8F3;
+    padding: 3vw 2.8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw;
+}
+.page2 .header{
+    width: 100%;
+    height: 6.2vw;
+    border-bottom: 1px solid rgb(118, 117, 117);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page2 .header .left{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.page2 .header .right{
+    overflow: hidden;
+}
+.left span, .right span{
+    font-size: 2vw;
+    font-family: heading;
+}
+.page2 .contents div p{
+    font-size: 4vw;
+    font-family: heading;
+    /* margin-top: 2vw; */
+}
+.page2 .contents div{
+/* border: 1px solid black; */
+overflow: hidden;
+}
+.page3{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FAF8F3;
+}
+.page3 .pageTop{
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3vw 2.8vw;
+
+}
+.pageTop h4{
+    font-family: heading;
+}
+.pageTop div{
+    overflow: hidden;
+}
+.pageTop h4 span{
+    background-color: black;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 15px;
+}
+.pageTop h2{
+    font-size: 4vw;
+    font-family: heading;
+    font-weight: 100;
+}
+.worksHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 2.8vw;
+}
+.worksHead h5{
+    font-family: heading;
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+.work{
+    width: 100%;
+    height: 90vh;
+    padding: 1vw 2.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.works{
+    width: 40%;
+    height: 100%;
+    background-color: grey;
+    position: relative;
+
+}
+.works video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.works img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    transition: all ease 1s;
+
+}
+.works:hover img{
+    opacity: 0;
+}
+.message{
+    padding: 4vw 2.8vw;
+}
+.msg div p{
+    font-size: 2vw;
+    font-family: heading;
+
+}
+.msg div{
+    overflow: hidden;
+}
+.msg{
+    border-bottom: 1px solid black;
+    padding: 2vw 0;
+}
+.msg2{
+    margin-top: 2vw;
+}
+.msg2 div{
+    overflow: hidden;
+}
+.msg2 div p {
+    font-size: 4vw;
+    font-family: heading;
+    /* text-align: center; */
+}
+.loader{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgb(16, 16, 16);
+    color: white;
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 2vw;
+}

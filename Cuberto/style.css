@@ -1,0 +1,306 @@
+@font-face {
+    font-family: header;
+    src: url(/matter-light.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.Hero{
+    width: 100%;
+    height: 100vh;
+    padding: 1.1vw 3vw;
+}
+.Hero nav{
+    width: 100%;
+    height: 4vw;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Hero nav h1{
+    font-size:1.5vw;
+    text-transform: lowercase;
+    font-weight: 900;
+    font-family: header;
+    color: black;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 1000;
+    position: fixed;
+    right: 4vw;
+
+}
+.bars{
+    width: 3vw;
+    height: 2px;
+    background-color: black;
+    transition: all ease-in-out 0.3s;
+}
+.change #bar1{
+    transform: translate(0,9px) rotate(-45deg);
+}
+.change #bar2{
+    transform: translate(0,-2px) rotate(45deg);
+}
+
+.heroContainer{
+    font-family: header;
+    /* border: 2px solid black; */
+    height: 70vh;
+    margin-top: 6vw;
+    padding-left:7.5vw ;
+    position: relative;
+}
+.heroContainer div{
+    width: 14vw;
+    height: 9vw;
+    border-radius: 4rem;
+    overflow: hidden;
+    text-align: center;
+}
+.heroContainer div video{
+    width: 14vw;
+}
+.heroContainer h1{
+    font-size: 8.5vw;
+    font-weight: 400;
+    letter-spacing: -8px;
+}
+.heroContainer aside{
+    display: flex;
+    /* background-color: red; */
+    gap: 3vw;
+}
+.heroContainer h1 span{
+    font-weight: normal;
+    font-style: italic;
+    color: rgb(62, 59, 59);
+}
+#human{
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid black;
+    bottom: 1vw;
+    right: 2vw;
+    width: 10vw;
+}
+.overlay{
+    z-index: 999;
+    width: 0%;
+    height: 100vh;
+    
+   position: fixed;
+   top: 0;
+   right: 0;
+   overflow: hidden;
+   transition: all ease-in-out 0.5s;
+}
+.overlay .menus{
+    width: 55%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+}
+.link{
+    width: 11vw;
+    border: 2px solid red;
+    height: 3vw;
+    overflow: hidden;
+    transition: all ease-in-out 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+.link:hover h1{
+    margin-top: -26px;
+}
+.mainVideo{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.mainVideo video{
+    width: 100%;
+    /* height: 100%; */
+}
+
+.work{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+.work .logoVideo{
+    /* background-color: red; */
+    width: 35vw;
+    height: 35vw;
+}
+.work .content{
+    height: 35vw;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+.work .content p{
+    font-family: header;
+    font-size: 3vw;
+}
+.work .content button{
+    width: 30vw;
+    height: 10vw;
+    /* outline: none; */
+    border: 1px solid black;
+    background: transparent    ;
+    border-radius: 4rem;
+    font-size: 2.5vw;
+    font-weight: 700;
+    font-family: header;
+    transition: all ease 0.8s;
+}
+.work .logoVideo video{
+    width: 100%;
+    height: 100%;
+}
+.work .content button:hover{
+    background-color: #1b1b1b;
+    color: white;
+}
+.projects{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    border-top-right-radius: 5rem;
+    border-top-left-radius: 5rem;
+    color: white;
+    font-family: header;
+    padding: 10vw 12vw;
+}
+
+
+.projects .heading h2{
+    font-size: 8vw;
+    font-weight: 700;
+}
+.projects .heading div{
+    width: 100%;
+    /* background-color: red; */
+    height: 10vw;
+    display: flex;
+}
+.projects .heading div aside{
+    border-radius: 4rem;
+    width: 13rem;
+    background-color: yellow;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    
+}
+.projects .heading div aside video{
+    width: 100%;
+    /* height: 10rem; */
+    
+}
+.projects .heading div h2{
+    font-style: italic;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+.card video{
+    /* width: 30vw; */
+    height: 35vw;
+    border-radius: 2.5rem;
+}
+.list2{
+   margin-top: 2vw;
+}
+.list1,.list2{
+    display: flex;
+    flex-direction: column;
+    gap: 6vw;
+    width: 30vw;
+}
+
+.lists{
+    margin-top: 3vw;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 2vw;
+    position: relative;
+}
+.card h6{
+    font-size: 2vw;
+}
+.card img{
+    /* width: 100%; */
+    width: 26.2vw;
+    height: 35vw;
+    position: absolute;
+    top:0;
+    border-radius: 2.5rem;
+    transition: all ease 1.5s;
+
+}
+.card:hover img{
+    opacity: 0 ;
+}
+.philosophy{
+    width: 100%;
+    background-color: #000;
+}
+.ourPhilosophy{
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    border-radius: 5rem 5rem 0 0;
+    font-family: header;
+    padding: 10vw 12vw 7vw 12vw;
+    display: flex;
+    flex-direction: column;
+    gap: 6vw;
+}
+
+
+.ourPhilosophy .title h3{
+    font-size: 11vw;
+    font-weight: 600;
+}
+.ourPhilosophy .title h4{
+    font-size: 11vw;
+    font-weight: 200;
+    font-style: italic;
+}
+.pcontent{
+    display: flex;
+    align-items: center;
+}
+.pcontent video{
+    width: 35vw;
+    height: 35vw;
+}
+.pcontent p{
+    font-size: 1.8vw;
+}
